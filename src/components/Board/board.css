@@ -1,0 +1,161 @@
+.kanban-board {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+.container{
+    width: 80vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    gap: 10px;
+}
+
+select,
+.display-button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.display-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.column {
+    background-color: #f4f5f7;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.column-title {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.column-icon {
+    font-size: 1.2em;
+}
+
+.task-count {
+    background-color: #dfe1e6;
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 0.8em;
+}
+
+.column-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.column-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.task {
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    cursor: move;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.task-id {
+    font-size: 0.8em;
+    color: #5e6c84;
+}
+
+.assignee-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.task-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-type {
+    font-size: 0.8em;
+    color: #5e6c84;
+    background-color: #dfe1e6;
+    border-radius: 3px;
+    padding: 2px 4px;
+    display: inline-block;
+}
+
+.todo {
+    background-color: #f4f5f7;
+}
+
+.in-progress {
+    background-color: #e6fcff;
+}
+
+.done {
+    background-color: #e3fcef;
+}
+
+.canceled {
+    background-color: #ffebe6;
+}
+
+.user-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.user-column {
+    width: 20%;
+}
+
+.priority-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.priority-column {
+    width: 20%;
+}
